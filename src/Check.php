@@ -304,7 +304,7 @@ class Check
 			 $this->characterExpressions,
 			 $this->separatorExpression
 			);
-			$string = preg_replace($profanity, str_repeat($replacement, strlen($this->badWordsFound)), $string);
+			$string = preg_replace($profanity, str_repeat($replacement, mb_strlen($this->badWordsFound, 'UTF-8')), $string);
 		}
 
 		return $string;
