@@ -151,6 +151,15 @@ class CheckTest extends TestCase
 	/**
 	 * @test
 	 */
+	public function itGetBadWordFromProfanity()
+	{
+		$this->checker->hasProfanity("cunt");
+		$this->assertEquals('cunt', $this->checker->getBadWordsFound());
+	}
+
+	/**
+	 * @test
+	 */
 	public function itDoesNotDetectAsAsAProfanity()
 	{
 		$this->assertFalse($this->checker->hasProfanity("as"));
