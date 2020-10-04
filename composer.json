@@ -1,0 +1,33 @@
+{
+    "name": "arif-rh/profanity-filter",
+    "description": "Filter bad words and profanities.",
+    "homepage": "https://github.com/arif-rh/profanity-filter",
+    "keywords": ["profanity filter", "bad word cleaner", "profanity", "profanity check"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arif Rahman Hakim",
+            "email": "arifrahmanhakim.net@gmail.com"
+        }
+    ],
+    "require": {
+		"php": ">=7.2"
+    },
+    "require-dev": {
+		"phpunit/phpunit": "8.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Arifrh\\ProfanityFilter\\": "src"
+        }
+    },
+	"autoload-dev": {
+		"psr-4": {
+			"Arifrh\\ProfanityTests\\": "tests"
+		}
+	},
+	"scripts": {
+        "test": "phpunit",
+        "testdox": "phpunit --testdox"
+	}
+}
