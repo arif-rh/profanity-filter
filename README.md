@@ -8,7 +8,7 @@ Note:
 
 ## NEW FEATURE
 ---------------
-* `cleanWords` : obfuscate only the bad words, original package will obfuscate all sentence.
+* `cleanWords` : obfuscate only the bad words, original package will obfuscate all sentence [see this issue](https://github.com/developerdino/ProfanityFilter/issues/20).
   ````
   // assume that 'badword' is a bad word
   $words = 'This is a badword';
