@@ -28,7 +28,7 @@ Note:
   echo $check->getBadWordsFound();
   // output -> badword
 
-* Whitelists : Set some whitelist word to fix problem false positive filter
+* Whitelists : Set some whitelist word to fix [false positive issue](https://github.com/developerdino/ProfanityFilter/issues/21) filter
   ````
   // Set whitelist when initialize the class
   $filter = new Check($profinities, $whitelist);
